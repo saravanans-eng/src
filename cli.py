@@ -1,12 +1,13 @@
 import os
 import sys
 import argparse
+
 import time
 from datetime import datetime
 
-from src.doc_compare import parser as filename_parser
-from src.doc_compare import comparator, report, config
-from src.doc_compare.watcher import start_watching
+from doc_compare import parser as filename_parser
+from doc_compare import comparator, report, config
+from doc_compare.watcher import start_watching
 
 
 def find_original(jid: str, aid: str) -> str:
